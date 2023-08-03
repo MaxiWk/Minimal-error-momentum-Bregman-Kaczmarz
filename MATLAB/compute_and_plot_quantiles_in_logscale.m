@@ -8,13 +8,13 @@
 %   values such as iterations, runtime, number of multiplications.
 %   Also allowed: array of size 'num_iters', then
 %   we generate a cell array with 'num_methods' many copies
-%   Also allowed: array of size 'num_iters' x num_methods, then
-%   we generate a cell array with 'num_methods' many copies
+%   Also allowed: array of size 'num_iters' x 'num_methods', then
+%   we just transform the array into a cell array
 % -'arrs': cell array with entries of size 'num_iters' x num_repeats, 
 %   each field corresponds to a method. Contains error quantities such as
 %   errors ||x-x_hat||
 %   Also allowed: 3d array, where each slice corresponds to a method, then
-%   we generate a cell array with 'num_methods' many copies
+%   we transform the 3d array into a 2d cell array 
 % - 'num_methods' = length(arrs) == length(x_arrays)
 % - 'line_colors', ... are cell arrays which specifies a color, ... for each
 %   method 
